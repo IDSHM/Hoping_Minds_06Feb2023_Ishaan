@@ -3,7 +3,6 @@ def merge(left, right):
 
 # result stored in this 
     result = []
-    print(result)
     
 # create two indices  
     i,j = 0, 0 
@@ -22,6 +21,7 @@ def merge(left, right):
 # append remaining elements in the array       
     result += left[i:]
     result += right[j:]
+    print("Current State:",result)
     return result
 
 # function for mergesort 
@@ -38,5 +38,4 @@ def mergesort(a):
 
 # inputs
 arr = [5,8,9,4,3,6,77,22,6,1]
-print(mergesort(arr))
-
+print("Sorted Array:",mergesort(arr))
